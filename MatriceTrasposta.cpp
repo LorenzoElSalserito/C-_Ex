@@ -23,15 +23,17 @@ for(int i=0; i<righe; i++)
 
 void StampaMatrice(int **M, int righe, int colonne){
 	for(int i=0; i<righe; i++)
-	{	for(int j=0; j<colonne; j++){
-			cout << M[i][j]<<endl;
+	{
+		for(int j=0; j<colonne; j++){
+			cout << M[i][j]<<" ";
 		}
+				cout<<endl;
 	}
 }
-
+//riempimatrice aggiunge alle righe le colonne nella matrice
 void RiempiMatrice(int **M, int**M1, int righe, int colonne){
 	for(int k=0; k<righe ; k++){
-		M[k] = new int[righe];
+		M[k] = new int[colonne];
 		M1[k] = new int[colonne];
 	}	
 for(int i=0; i<righe; i++){
