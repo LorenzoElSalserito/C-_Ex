@@ -25,13 +25,12 @@ void GeneraMatrice(int **M, int righe, int colonne){
 void StampaMatrice(int **M, int righe, int colonne, char c){
 
     for (int i=0; i<righe*righe; i++){
-		cout<<c;
-		}
 	for(int j=1; j<colonne*colonne; j++){
-		cout<<endl<<c;
-		}	
+		cout<<c<<" ";
+		}
+		cout<<endl;	
+    }
 }
-
 
 int main (){
     int x=0;
